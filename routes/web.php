@@ -6,7 +6,9 @@ use App\Http\Controllers\TugasController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/dashboard', [PageController ::class,'index'])->name('dashboard');
+//ini adalah routing
+
+Route::get('/dashboard', [PageController ::class,'index']);
 
 Route::get('/', [LoginController ::class,'index']);
 Route::get('/tugas', [TugasController ::class,'index'])->name('tugas');
