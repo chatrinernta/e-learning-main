@@ -1,0 +1,100 @@
+.form {
+    background-color: #fff;
+    display: block; 
+    margin: 200px;
+    margin-left: 450px;
+    padding: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    width: 700px;
+    height: 450px;
+    border-radius: 0.5rem;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .card-title{
+    display: flex;
+  }
+  
+  .title{
+    margin-top: -22px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: 'Konkhmer Sleokchher';
+  }
+  
+  .form-title {
+    font-family: 'Konkhmer Sleokchher';
+    font-size: 22px;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .label{
+    margin-left: 150px;
+    margin-bottom: 0;
+    font-family: 'Roboto'
+  }
+  
+  .input-container input, .form button {
+    color: black;
+    font-weight: bold;
+    outline: none;
+    width: 110px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #e6f8f6;
+    border: 1px solid #e5e7eb;
+    margin: 8px 0;
+    margin-left:260px;
+    margin-top:10px;
+    font-family: 'Roboto'
+  }
+  
+  .input-container input {
+    background-color: white;
+    padding: 1rem;
+    padding-right: 3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 300px;
+    height: 10px;
+    margin-left: 130px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .submit {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #4F46E5;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+  }
+  .signup-link {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .signup-link a {
+    text-decoration: underline;
+  }
