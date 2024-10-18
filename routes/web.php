@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 
 
 //ini adalah routing
+//chatrine orang kaya
 
 Route::get('/dashboard', [PageController ::class,'index']);
 
