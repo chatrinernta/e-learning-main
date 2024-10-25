@@ -10,9 +10,9 @@ use Illuminate\Support\Facades\Auth;
 class PageController extends Controller
 {
     //
-    public function index()
+    public function dashboard()
     {
-        return view('dashboard');
+        return view('Murid.dashboard');
     }
 }
 

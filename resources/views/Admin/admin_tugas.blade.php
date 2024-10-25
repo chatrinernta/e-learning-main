@@ -14,17 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
 </head>
-    <style>
-        /* Custom Navbar Background Color */
-        .navbar-custom {
-            background-color: #CDE8E6;
-        }
-    </style>
 
 <body>
     </style>
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-custom">
+<nav class="navbar navbar-expand-lg navbar-custom" style="background-color: #CDE8E6;">
     <div class="container-fluid">
         <!-- Logo or Brand -->
         <a class="navbar-brand" href="#">My Website</a>
