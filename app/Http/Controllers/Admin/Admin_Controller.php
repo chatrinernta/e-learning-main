@@ -46,6 +46,25 @@ class Admin_Controller extends Controller
     {
         return view ('Admin/admin_daftarsiswa');
     }
+    public function XII_PPLG1()
+    {   
+        return view ('Admin/admin_XIIPPLG1');
+    }
+    public function XII_PPLG2()
+    {   
+        return view ('Admin/admin_XIIPPLG2');
+    }
+    public function XII_DKV1()
+    {   
+        return view ('Admin/admin_XIIDKV1');
+    }
+    public function diskusi()
+    {   
+        return view ('Admin/admin_diskusi');
+    }
+
+
+
 
     
 }
