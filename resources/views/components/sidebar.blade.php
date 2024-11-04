@@ -35,26 +35,26 @@
 
 
                         <li class="sidebar-item  ">
-                            <a href="#" class='sidebar-link'>
+                            <a href="diskusi" class='sidebar-link'>
                                 <i class="bi bi-chat-dots-fill"></i>
                                 <span>Diskusi</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item  has-sub">
-                            <a href="#" class='sidebar-link'>
+                            <a href="daftarkelas" class='sidebar-link'>
                                 <i class="bi bi-person-badge-fill"></i>
-                                <span>Daftar Siswa</span>
+                                <span>Daftar Kelas</span>
                             </a>
                             <ul class="submenu ">
                                 <li class="submenu-item ">
-                                    <a href="">XII PPLG 1</a>
+                                    <a href="/admin/XII_PPLG1">XII PPLG 1</a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="#">XII PPLG 2</a>
+                                    <a href="/admin/XII_PPLG2">XII PPLG 2</a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="">XII DKV 1</a>
+                                    <a href="/admin/XII_DKV1">XII DKV 1</a>
                                 </li>
                             </ul>
                         </li>

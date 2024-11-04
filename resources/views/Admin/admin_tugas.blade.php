@@ -91,23 +91,23 @@
                         <li class="sidebar-title">Interface</li>
 
                         <li class="sidebar-item ">
-                            <a href="#" class='sidebar-link'>
+                            <a href="tugas" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-medical-fill"></i>
                                 <span>Tugas</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item ">
-                            <a href="#" class='sidebar-link'>
+                            <a href="diskusi" class='sidebar-link'>
                                 <i class="bi bi-chat-dots-fill"></i>
                                 <span>Diskusi</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item has-sub">
-                            <a href="#" class='sidebar-link'>
+                            <a href="daftarkelas" class='sidebar-link'>
                                 <i class="bi bi-person-badge-fill"></i>
-                                <span>Daftar Siswa</span>
+                                <span>Daftar Kelas</span>
                             </a>
                             <ul class="submenu">
                                 <li class="submenu-item">
@@ -274,6 +274,46 @@
                     <!-- End of Accordions for Subjects -->
                 </div>
             </div>
+            <style>
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color:  #f5f7f8; /* Warna untuk baris ganjil */
+    }
+    .table-striped tbody tr:nth-of-type(even) {
+        background-color: #ffffff; /* Warna untuk baris genap */
+    }
+            </style>
+               <style>
+        .btn-custom-green {
+            background-color: #28a745;
+            color: white;   
+        }
+        .btn-custom-red {
+            background-color: #dc3545;
+            color: white;
+        }
+        .btn-custom-green:hover, .btn-custom-red:hover {
+            color: #31511e;
+        }
+        .btn-custom-green:focus, .btn-custom-red:focus {
+            box-shadow: #31511e;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-custom-green">
+                <i class="fas fa-plus"></i> Tambah Siswa
+            </button>
+            <div>
+                <button class="btn btn-custom-red me-2">
+                    <i class="fas fa-times"></i> Hapus Siswa
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
 
             <div>
                 <!-- Table Section -->

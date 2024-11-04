@@ -1,0 +1,9 @@
+/* Sembunyikan submenu secara default */
+.submenu {
+    display: none;
+}
+
+/* Tampilkan submenu saat class `show` ada */
+.submenu.show {
+    display: block;
+}
