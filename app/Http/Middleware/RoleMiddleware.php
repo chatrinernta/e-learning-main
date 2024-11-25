@@ -17,7 +17,7 @@ class RoleMiddleware
         if (Auth::check() && Auth::user()->role === $role) {
             return $next($request);  // Lanjut ke route jika sesuai
         }
-
+        auth('web')->logout();
         // Jika role tidak sesuai, arahkan ke halaman error atau login
         return redirect('/')->withErrors(['error' => 'Unauthorized access.']);
     }

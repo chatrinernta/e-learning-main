@@ -18,7 +18,7 @@
 
 <body>
 
-   
+
 
     <div id="app">
         <!-- Navbar -->
@@ -76,7 +76,7 @@
         <div id="main">
 
             <div class="page-heading">
-                <h3>HALO, CALON ANAK SUKSES</h3>
+                <x-account :username="Auth::user()->username" />
             </div>
 
             <div class="page-content">

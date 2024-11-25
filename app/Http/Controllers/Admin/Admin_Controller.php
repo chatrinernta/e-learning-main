@@ -20,23 +20,22 @@ class Admin_Controller extends Controller
 
     // Method untuk menyimpan user baru ke database
     public function store(Request $request)
-    {
-        // Validasi input
-        $request->validate([
-            'username' => 'required|unique:users,username',
-            'role' => 'required|in:admin,guru,murid',
-            'password' => 'required|min:6',
-        ]);
+{
+    $request->validate([
+        'username' => 'required|string|max:255',
+        'role' => 'required|string',
+        'password' => 'required|string|min:6',
+    ]);
 
-        // Simpan ke database
-        User::create([
-            'username' => $request->username,
-            'role' => $request->role,
-            'password' => Hash::make($request->password), // Enkripsi password
-        ]);
+    User::create([
+        'username' => $request->input('username'),
+        'role' => $request->input('role'),
+        'password' => bcrypt($request->input('password')), // Jangan lupa hashing password
+    ]);
 
-        return redirect()->back()->with('success', 'User berhasil ditambahkan');
-    }
+    return redirect()->back()->with('success', 'User berhasil ditambahkan!');
+}
+
 
     public function tugas()
     {
