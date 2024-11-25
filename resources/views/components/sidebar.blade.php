@@ -1,4 +1,3 @@
-<!-- resources/views/components/sidebar.blade.php -->
 <div id="sidebar" class="active">
     <div class="sidebar-wrapper active">
         <div class="sidebar-header">
@@ -14,7 +13,47 @@
         </div>
         <div class="sidebar-menu">
             <ul class="menu">
-                {{ $slot }}
+                <li class="sidebar-title">Menu</li>
+                <li class="sidebar-item active">
+                    <a href="{{ route('admin.dashboard') }}" class="sidebar-link">
+                        <i class="bi bi-grid-fill"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-title">Interface</li>
+                <li class="sidebar-item">
+                    <a href="{{ route('admin.tugas') }}" class="sidebar-link">
+                        <i class="bi bi-file-earmark-medical-fill"></i>
+                        <span>Tugas</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="{{ route('admin.diskusi') }}" class="sidebar-link">
+                        <i class="bi bi-chat-dots-fill"></i>
+                        <span>Diskusi</span>
+                    </a>
+                </li>
+                <li class="sidebar-item has-sub">
+                    <a href="daftarkelas" class="sidebar-link">
+                        <i class="bi bi-person-badge-fill"></i>
+                        <span>Daftar Kelas</span>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="/admin/XII_PPLG1">XII PPLG 1</a></li>
+                        <li class="submenu-item"><a href="/admin/XII_PPLG2">XII PPLG 2</a></li>
+                        <li class="submenu-item"><a href="/admin/XII_DKV1">XII DKV 1</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="{{ route('logout') }}" class="sidebar-link"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Log Out</span>
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                </li>
             </ul>
         </div>
     </div>

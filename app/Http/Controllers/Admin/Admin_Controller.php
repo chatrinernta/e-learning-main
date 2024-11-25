@@ -15,7 +15,9 @@ class Admin_Controller extends Controller
     public function dashboard()
     {
         // Arahkan ke view admin dashboard
-        return view('Admin.admin_dashboard');
+
+        $role = Auth::user()->role;
+        return view('Admin.admin_dashboard', compact('role'));
     }
 
     // Method untuk menyimpan user baru ke database
