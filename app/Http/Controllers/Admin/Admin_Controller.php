@@ -12,7 +12,7 @@ class Admin_Controller extends Controller
 {
 
     // Method untuk menampilkan form tambah user di halaman dashboard admin
-    public function create()
+    public function dashboard()
     {
         // Arahkan ke view admin dashboard
         return view('Admin.admin_dashboard');

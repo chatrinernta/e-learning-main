@@ -13,7 +13,7 @@
 
     
     <div style="transition: 1s;" data-aos="zoom-in">
-        <form class="form" action="" method="POST">
+        <form class="form" action="{{ route('login.process') }}" method="POST">
              @csrf
             <div class="card-title">
                 <i class='fas fa-book-open' style="font-size: 19px;"></i>
@@ -23,13 +23,13 @@
             </div>
             <p class="form-title">Welcome back !</p>
             <div class="input-container">
-                <h5 class="label">EMAIL</h5>
-                <input type="email" name="email" placeholder="Enter email">
+                <h5 class="label">USERNAME</h5>
+                <input type="text" name="username" placeholder="Enter username" required>
                 <span></span>
             </div>
             <div class="input-container">
                 <h5 class="label">PASSWORD</h5>
-                <input type="password" name="password" placeholder="Enter your password">
+                <input type="password" name="password" placeholder="Enter your password" required>
             </div>
             <button style="margin-top: 16px;" type="submit" class="submit">
                 <p style="margin-top: -8px;">LOGIN</p>
