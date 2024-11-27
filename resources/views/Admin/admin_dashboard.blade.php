@@ -1,9 +1,11 @@
 @extends('app.main')
 
+@section('page-heading', 'Dashboard Admin')
+
 @section('contents')
     <!-- Content Section -->
     <div class="container mt-4">
-        <x-account :username="Auth::user()->username" />
+        <h3>Selamat Datang {{ $role }}</h3>
         @if (session('success'))
             <div class="alert alert-success">{{ session('success') }}</div>
         @elseif (session('error'))

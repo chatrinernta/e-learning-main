@@ -18,6 +18,38 @@
     <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #f5f7f8;
+            /* Warna untuk baris ganjil */
+        }
+    
+        .table-striped tbody tr:nth-of-type(even) {
+            background-color: #ffffff;
+            /* Warna untuk baris genap */
+        }
+    </style>
+    <style>
+        .btn-custom-green {
+            background-color: #28a745;
+            color: white;
+        }
+    
+        .btn-custom-red {
+            background-color: #dc3545;
+            color: white;
+        }
+    
+        .btn-custom-green:hover,
+        .btn-custom-red:hover {
+            color: #31511e;
+        }
+    
+        .btn-custom-green:focus,
+        .btn-custom-red:focus {
+            box-shadow: #31511e;
+        }
+    </style>
 </head>
 
 <body>

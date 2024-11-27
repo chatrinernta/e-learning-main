@@ -2,7 +2,7 @@
 @section('page-heading', 'HALO, CALON ANAK SUKSES')
 
 @section('contents')
-    <div class="container mt-5 d-flex">
+    <div class="container mt-4 d-flex">
         <div class="row">
             <!-- Pemrograman Web Card -->
             <div class="col-lg-3 mb-5">

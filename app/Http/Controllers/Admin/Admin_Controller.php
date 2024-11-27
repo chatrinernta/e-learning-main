@@ -49,19 +49,19 @@ class Admin_Controller extends Controller
     }
     public function XII_PPLG1()
     {   
-        return view ('Admin/admin_XIIPPLG1');
+        return view ('Admin.admin_xii_pplg_1');
     }
     public function XII_PPLG2()
     {   
-        return view ('Admin/admin_XIIPPLG2');
+        return view ('Admin.admin_xii_pplg_2');
     }
     public function XII_DKV1()
     {   
-        return view ('Admin/admin_XIIDKV1');
+        return view ('Admin.admin_xii_dkv_1');
     }
     public function diskusi()
     {   
-        return view ('Admin/admin_diskusi');
+        return view ('Admin.admin_diskusi');
     }
 
 

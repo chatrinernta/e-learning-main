@@ -22,7 +22,7 @@ Route::prefix('admin')->middleware([AdminMiddleware::class])->group(function () 
     Route::get('/tugas', [Admin_Controller::class, 'tugas'])->name('admin.tugas');
     Route::get('/daftar_kelas', [Admin_Controller::class, 'daftar_kelas'])->name('admin.daftar_kelas');
     Route::get('/daftar_siswa', [Admin_Controller::class, 'daftar_siswa'])->name('admin.daftar_siswa');
-    Route::get('/XII_PPLG1', [Admin_Controller::class, 'dsaXII_PPLG1'])->name('admin.XII_PPLG1');
+    Route::get('/XII_PPLG1', [Admin_Controller::class, 'XII_PPLG1'])->name('admin.XII_PPLG1');
     Route::get('/XII_PPLG2', [Admin_Controller::class, 'XII_PPLG2'])->name('admin.XII_PPLG2');
     Route::get('/XII_DKV1', [Admin_Controller::class, 'XII_DKV1'])->name('admin.XII_DKV1');
     Route::get('/diskusi', [Admin_Controller::class, 'diskusi'])->name('admin.diskusi');

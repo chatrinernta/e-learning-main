@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers\Guru;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class Guru_Controller extends Controller
 {
     public function dashboard()
     {
-        return view('Guru.guru_dashboard');
+        $role = Auth::user()->role;
+        return view('Guru.guru_dashboard', compact('role'));
     }
 }
