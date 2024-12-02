@@ -1,22 +1,25 @@
 @extends('app.main')
 
-@section('page-heading', 'Diskusi')
-    
+@section('page-heading', '')
+
 @section('contents')
 
-<div class="container">
-  <div class="row">
+    <!-- Content Section -->
+    <div class="container mt-4">
+        <h3>Selamat Datang {{ $role }}</h3>
+        <br>
+        <div class="row">
     <!-- Card 1 -->
-    <div class="col-md-4 mb-3">
+    <div class="col-md-4 mb-3 ml-sm-auto">
       <div class="card border-primary">
         <div class="card-body text-primary">
-          <h5 class="card-title">Pemograman Web</h5>
+          <h5 class="card-title">Bahasa Jepang</h5>
           <p class="card-text">Bergabunglah dengan grup diskusi untuk belajar bersama tentang mata pelajaran ini!</p>
         </div>
         <button 
           type="button" 
           class="btn btn-outline-primary" 
-          onclick="window.open('https://chat.whatsapp.com/H4vhWRjjEGMB7TPvbb52Z0')">
+          onclick="window.open('https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bergabung%20ke%20grup%20diskusi%20Bahasa%20Inggris!', '_blank')">
           Join grup
         </button>
       </div>

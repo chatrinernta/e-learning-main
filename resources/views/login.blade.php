@@ -24,7 +24,7 @@
                     <h2>E-LEARNING</h2>
                 </div>
             </div>
-            <p class="form-title">Welcome back !</p>
+            <p class="form-title">Login</p>
             <div class="input-container">
                 <h5 class="label">USERNAME</h5>
                 <input type="text" name="username" placeholder="Enter username" required>

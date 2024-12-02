@@ -1,10 +1,12 @@
 @extends('app.main')
 
-@section('page-heading', 'Xii PPLG 1')
+@section('page-heading', '')
 
 @section('contents')
-
+    <!-- Content Section -->
     <div class="container mt-3">
+    <h3>Selamat Datang {{ $role }}</h3>
+    <br>
         <div class="d-flex justify-content-between">
             <button class="btn btn-custom-green">
                 <i class="fas fa-plus"></i> TAMBAH SISWA
@@ -13,7 +15,7 @@
     </div>
 
     <div class="container-fluid mt-30">
-        <h4 class="text-center mb-4">Data Siswa Kelas XII PPLG 1</h4>
+        <h4 class="text-center mb-4">Data Siswa Yang Diajarkan XII PPLG 2</h4>
         <div class="table-responsive">
             <table class="table table-bordered table-hover table-striped">
                 <thead class="thead-blue">
@@ -175,4 +177,4 @@
             </table>
         </div>
     </div>
-@endsection
+    @endsection

@@ -17,4 +17,5 @@ class GuruMiddleware
 
         return redirect('/')->withErrors(['error' => 'Unauthorized access.']);
     }
+   
 }

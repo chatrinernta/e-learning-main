@@ -8,14 +8,6 @@
         <div class="d-flex justify-content-between">
             <button class="btn btn-custom-green">
                 <i class="fas fa-plus"></i> TAMBAH SISWA
-            </button>
-            <div>
-                <button class="btn btn-custom-red me-2">
-                    <i class="fas fa-times"></i> HAPUS SEMUA SISWA
-                </button>
-                <button class="btn btn-custom-green">
-                    <i class="fas fa-check"></i> Print to PDF
-                </button>
             </div>
         </div>
     </div>
