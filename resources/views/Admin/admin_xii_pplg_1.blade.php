@@ -3,18 +3,22 @@
 @section('page-heading', 'Xii PPLG 1')
 
 @section('contents')
-
-    <div class="container mt-3">
-        <div class="d-flex justify-content-between">
-            <button class="btn btn-custom-green">
-                <i class="fas fa-plus"></i> TAMBAH SISWA
-            </div>
-        </div>
+<div class="container mt-3">
+    <div class="d-flex justify-content-between">
+        <button class="btn btn-custom-green">
+        <a href="{{ route('siswas.create') }}" class="btn btn-custom-green">
+            <i class="fas fa-plus"></i> Tambah Siswa
+        </a>
+        </button>
     </div>
+</div>
 
-    <div class="container-fluid mt-30">
-        <h4 class="text-center mb-4">Data Siswa Kelas XII PPLG 1</h4>
-        <div class="table-responsive">
+<div class="container-fluid mt-30">
+    <h4 class="text-center mb-4">Data Siswa Kelas XII PPLG 1</h4>
+    <div class="table-responsive">
+        @if ($siswas->isEmpty())
+            <p class="text-center">Data siswa tidak tersedia.</p>
+        @else
             <table class="table table-bordered table-hover table-striped">
                 <thead class="thead-blue">
                     <tr>
@@ -30,149 +34,29 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>1234</td>
-                        <td>002585658</td>
-                        <td>Rafi Adlu Hakim Arrasyid</td>
-                        <td>Laki-laki</td>
-                        <td>Bandung</td>
-                        <td>12 Juli 2007</td>
-                        <td>XII PPLG 1</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-primary">Edit</a>
-                            <a href="#" class="btn btn-sm btn-danger">Delete</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>1234</td>
-                        <td>002585658</td>
-                        <td>Maulana Malik Ibrahim</td>
-                        <td>Laki-laki</td>
-                        <td>Landean girang</td>
-                        <td>27 Februari 2006</td>
-                        <td>XII PPLG 1</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-primary">Edit</a>
-                            <a href="#" class="btn btn-sm btn-danger">Delete</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>1234</td>
-                        <td>002585658</td>
-                        <td>Chatrine Rinata Putri</td>
-                        <td>Perempuan</td>
-                        <td>Luxemburg</td>
-                        <td>16 Januari 2007</td>
-                        <td>XII PPLG 1</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-primary">Edit</a>
-                            <a href="#" class="btn btn-sm btn-danger">Delete</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>1234</td>
-                        <td>002585658</td>
-                        <td>Novia Nurul Zulian</td>
-                        <td>Perempuan</td>
-                        <td>Korea Selatan</td>
-                        <td>27 Juli</td>
-                        <td>XII PPLG 1</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-primary">Edit</a>
-                            <a href="#" class="btn btn-sm btn-danger">Delete</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>1234</td>
-                        <td>002585658</td>
-                        <td>A</td>
-                        <td>Perempuan</td>
-                        <td>Wonogiri</td>
-                        <td>2008-12-27</td>
-                        <td>KELAS IX A</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-primary">Edit</a>
-                            <a href="#" class="btn btn-sm btn-danger">Delete</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>1234</td>
-                        <td>002585658</td>
-                        <td>A</td>
-                        <td>Perempuan</td>
-                        <td>Wonogiri</td>
-                        <td>2008-12-27</td>
-                        <td>KELAS IX A</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-primary">Edit</a>
-                            <a href="#" class="btn btn-sm btn-danger">Delete</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>1234</td>
-                        <td>002585658</td>
-                        <td>A</td>
-                        <td>Perempuan</td>
-                        <td>Wonogiri</td>
-                        <td>2008-12-27</td>
-                        <td>KELAS IX A</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-primary">Edit</a>
-                            <a href="#" class="btn btn-sm btn-danger">Delete</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>1234</td>
-                        <td>002585658</td>
-                        <td>A</td>
-                        <td>Perempuan</td>
-                        <td>Wonogiri</td>
-                        <td>2008-12-27</td>
-                        <td>KELAS IX A</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-primary">Edit</a>
-                            <a href="#" class="btn btn-sm btn-danger">Delete</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>1234</td>
-                        <td>002585658</td>
-                        <td>A</td>
-                        <td>Perempuan</td>
-                        <td>Wonogiri</td>
-                        <td>2008-12-27</td>
-                        <td>KELAS IX A</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-primary">Edit</a>
-                            <a href="#" class="btn btn-sm btn-danger">Delete</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>1234</td>
-                        <td>002585658</td>
-                        <td>A</td>
-                        <td>Perempuan</td>
-                        <td>Wonogiri</td>
-                        <td>2008-12-27</td>
-                        <td>KELAS IX A</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-primary">Edit</a>
-                            <a href="#" class="btn btn-sm btn-danger">Delete</a>
-                        </td>
-                    </tr>
-                    <!-- Tambahkan baris data lainnya sesuai kebutuhan -->
+                    @foreach ($siswas as $siswa)
+                        <tr>
+                            <td>{{ $siswa->id }}</td>
+                            <td>{{ $siswa->nis }}</td>
+                            <td>{{ $siswa->nisn }}</td>
+                            <td>{{ $siswa->nama }}</td>
+                            <td>{{ $siswa->jenis_kelamin }}</td>
+                            <td>{{ $siswa->tempat_lahir }}</td>
+                            <td>{{ $siswa->tanggal_lahir }}</td>
+                            <td>{{ $siswa->kelas }}</td>
+                            <td>
+                                <a href="{{ route('siswas.update', $siswa->id) }}" class="btn btn-sm btn-primary">Edit</a>
+                                <form action="{{ route('siswas.destroy', $siswa->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Yakin ingin menghapus?')">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
-        </div>
+        @endif
     </div>
+</div>
 @endsection

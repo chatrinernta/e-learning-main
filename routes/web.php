@@ -20,11 +20,35 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::prefix('admin')->middleware([AdminMiddleware::class])->group(function () {
     Route::get('/dashboard', [Admin_Controller::class, 'dashboard'])->name('admin.dashboard');
     Route::get('/tugas', [Admin_Controller::class, 'tugas'])->name('admin.tugas');
-    Route::get('/XII_PPLG1', [Admin_Controller::class, 'XII_PPLG1'])->name('admin.XII_PPLG1');
+    Route::get('/XII_PPLG1', [Admin_Controller::class, 'showSiswa'])->name('admin.xii_pplg1');
     Route::get('/XII_PPLG2', [Admin_Controller::class, 'XII_PPLG2'])->name('admin.XII_PPLG2');
     Route::get('/XII_DKV1', [Admin_Controller::class, 'XII_DKV1'])->name('admin.XII_DKV1');
     Route::get('/diskusi', [Admin_Controller::class, 'diskusi'])->name('admin.diskusi');
+    Route::get('/siswas/create', [Admin_Controller::class, 'create'])->name('siswas.create'); // Form tambah siswa
+    Route::post('/siswas', [Admin_Controller::class, 'store'])->name('siswas.store'); // Simpan data siswa
+    Route::post('/admin/siswas', [Admin_Controller::class, 'store'])->name('siswas.store');
+    Route::put('/siswas/{id}', [Admin_Controller::class, 'updateSiswa'])->name('siswas.update');
+    Route::delete('/siswas/{id}', [Admin_Controller::class, 'destroySiswa'])->name('siswas.destroy');
 });
+
+// Route::prefix('admin')->middleware([AdminMiddleware::class])->group(function () {
+//     Route::get('/dashboard', [Admin_Controller::class, 'dashboard'])->name('admin.dashboard');
+//     Route::get('/tugas', [Admin_Controller::class, 'tugas'])->name('admin.tugas');
+//     Route::get('/XII_PPLG1', [Admin_Controller::class, 'showSiswa'])->name('admin.xii_pplg1');
+//     Route::get('/XII_PPLG2', [Admin_Controller::class, 'XII_PPLG2'])->name('admin.XII_PPLG2');
+//     Route::get('/XII_DKV1', [Admin_Controller::class, 'XII_DKV1'])->name('admin.XII_DKV1');
+//     Route::get('/diskusi', [Admin_Controller::class, 'diskusi'])->name('admin.diskusi');
+//     Route::get('/admin/siswas/create', [Admin_Controller::class, 'create'])->name('siswas.create');
+//     Route::post('/admin/siswas', [Admin_Controller::class, 'store'])->name('siswas.store'); // Simpan data siswa
+//     Route::get('/siswas/{id}/edit', [Admin_Controller::class, 'editSiswa'])->name('siswas.edit');
+//     Route::put('/siswas/{id}', [Admin_Controller::class, 'updateSiswa'])->name('siswas.update');
+//     Route::delete('/siswas/{id}', [Admin_Controller::class, 'destroySiswa'])->name('siswas.destroy');
+
+
+
+
+
+// });
 
 // Rute Guru - dilindungi oleh GuruMiddleware
 Route::prefix('guru')->middleware([GuruMiddleware::class])->group(function () {
