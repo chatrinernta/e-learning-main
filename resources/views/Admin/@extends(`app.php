@@ -1,17 +1,15 @@
-@extends('app.main')
-    
-@section('contents')
-<div class="container mt-5">
+@extends(`app.main`)
+
+@section('content')
+    <div class="container mt-5">
         <div class="card shadow-lg">
             <div class="card-header bg-primary text-white">
                <h3 class="mb-0">Edit Data Siswa</h3>
             </div>
-         </div>
-    </div>
             <div class="card-body">
-            <form action="{{ route('siswas.update', $siswa->id) }}" method="POST">
+                <form action="{{ route('/siswa/{{$siswa->id}}, $id)`}}" method="POST">
                     @csrf
-                   @method('POST')
+                   @method("PUT")
 
                     <div class="mb-3">
                         <label for="nama" class="form-label">Nama:</label>
@@ -38,12 +36,11 @@
                     </div>
 
                     <div class="d-flex justify-content-between">
-                        <a href="{{ route('admin.dashboard') }}" class="btn btn-secondary">Kembali</a>
+                        <a href="{{ route(`admin.dashboard`) }}" class="btn btn-secondary">Kembali</a>
                         <button type="submit" class="btn btn-success">Update</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
 @endsection

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Siswa;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use\App\Models\Siswa;
+use App\Models\Siswa;
 use Illuminate\Http\Request;
 
 class SiswaController extends Controller
@@ -15,6 +15,9 @@ class SiswaController extends Controller
 {
     $siswas = Siswa::all(); // Mengambil semua data siswa dari tabel
     return view('Admin.admin_xii_pplg_1', compact('siswas'));
+
+    $siswas = Siswa::all(); // Mengambil semua data siswa dari tabel
+    return view('Admin.admin_xii_pplg_2', compact('siswas'));
 }
 
     /**

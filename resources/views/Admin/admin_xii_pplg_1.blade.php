@@ -1,6 +1,6 @@
 @extends('app.main')
 
-@section('page-heading', 'Xii PPLG 1')
+@section('page-heading', 'XII PPLG 1')
 
 @section('contents')
 <div class="container mt-3">
@@ -45,7 +45,7 @@
                             <td>{{ $siswa->tanggal_lahir }}</td>
                             <td>{{ $siswa->kelas }}</td>
                             <td>
-                                <a href="{{ route('siswas.update', $siswa->id) }}" class="btn btn-sm btn-primary">Edit</a>
+                                <a href="{{ route('siswas.updateView', $siswa->id) }}" class="btn btn-sm btn-primary">Edit</a>
                                 <form action="{{ route('siswas.destroy', $siswa->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Yakin ingin menghapus?')">
                                     @csrf
                                     @method('DELETE')

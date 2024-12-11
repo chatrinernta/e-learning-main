@@ -19,7 +19,7 @@
           type="button" 
           class="btn btn-outline-primary" 
           onclick="window.open('https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bergabung%20ke%20grup%20diskusi%20Bahasa%20Jepang!', '_blank')">
-          Join grup
+          Join grup>
         </button>
       </div>
     </div>

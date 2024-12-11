@@ -58,6 +58,9 @@ class Admin_Controller extends Controller
  {
      $siswas = Siswa::all(); // Gunakan model Siswa
      return view('Admin.admin_xii_pplg_1', compact('siswas'));
+
+     $siswas = Siswa::all(); // Gunakan model Siswa
+     return view('Admin.admin_xii_pplg_2', compact('siswas'));
  }
  
 

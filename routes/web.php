@@ -4,6 +4,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\Admin\Admin_Controller;
 use App\Http\Controllers\Guru\Guru_Controller;
 use App\Http\Controllers\Murid\Murid_Controller;
+use App\Http\Controllers\SiswaController;
 use App\Http\Middleware\AdminMiddleware;
 use App\Http\Middleware\GuruMiddleware;
 use App\Http\Middleware\MuridMiddleware;
@@ -21,14 +22,15 @@ Route::prefix('admin')->middleware([AdminMiddleware::class])->group(function () 
     Route::get('/dashboard', [Admin_Controller::class, 'dashboard'])->name('admin.dashboard');
     Route::get('/tugas', [Admin_Controller::class, 'tugas'])->name('admin.tugas');
     Route::get('/XII_PPLG1', [Admin_Controller::class, 'showSiswa'])->name('admin.xii_pplg1');
-    Route::get('/XII_PPLG2', [Admin_Controller::class, 'XII_PPLG2'])->name('admin.XII_PPLG2');
+    Route::get('/XII_PPLG2', [Admin_Controller::class, 'showSiswa'])->name('admin.XII_PPLG2');
     Route::get('/XII_DKV1', [Admin_Controller::class, 'XII_DKV1'])->name('admin.XII_DKV1');
     Route::get('/diskusi', [Admin_Controller::class, 'diskusi'])->name('admin.diskusi');
 
     // Route untuk Siswa
     Route::get('/siswas/create', [Admin_Controller::class, 'create'])->name('siswas.create'); // Form tambah siswa
     Route::post('/siswas', [Admin_Controller::class, 'store'])->name('siswas.store'); // Simpan data siswa
-    Route::put('/siswas/{id}', [Admin_Controller::class, 'updateSiswa'])->name('siswas.update');
+    Route::get('/siswas/{id}', [Admin_Controller::class, 'update'])->name('siswas.updateView');
+    Route::post('/siswas/{id}', [Admin_Controller::class, 'updateSiswa'])->name('siswas.update');
     Route::delete('/siswas/{id}', [Admin_Controller::class, 'destroySiswa'])->name('siswas.destroy');
 });
 // Route::prefix('admin')->middleware([AdminMiddleware::class])->group(function () {
